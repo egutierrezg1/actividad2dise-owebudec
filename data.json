@@ -1,0 +1,286 @@
+{
+  "site": {
+    "title": "Agencia EcoAventura LATAM",
+    "description": "Agencia EcoAventura LATAM: tours ecológicos por Latinoamérica. Reservas temporada alta Oct–Feb, grupos pequeños y operadores responsables.",
+    "logo": "Agencia EcoAventura LATAM",
+    "whatsapp": {
+      "number": "573001112233",
+      "text": "WhatsApp"
+    }
+  },
+  "navigation": [
+    { "text": "Sobre Nosotros", "href": "#sobre" },
+    { "text": "Tours", "href": "#tours" },
+    { "text": "Blog", "href": "#blog" },
+    { "text": "Seguros", "href": "#seguros" },
+    { "text": "Contacto", "href": "#contacto" },
+    { "text": "ES/EN", "href": "#", "aria-label": "Cambiar idioma" }
+  ],
+  "hero": {
+    "title": "Tours ecológicos por Latinoamérica",
+    "subtitle": "Reserva tu próxima aventura.",
+    "highlight": "Temporada alta Octubre–Febrero",
+    "highlightText": ": cupos limitados y grupos pequeños.",
+    "buttons": [
+      { "text": "Buscar Tours", "href": "#tours", "class": "btn-primary" },
+      { "text": "Cotizar ahora", "href": "#contacto", "class": "btn-outline" }
+    ]
+  },
+  "filters": {
+    "title": "Buscar por destino y fecha",
+    "fields": [
+      {
+        "label": "Destino",
+        "type": "select",
+        "options": ["Colombia", "Brasil", "Costa Rica", "Argentina", "Perú"]
+      },
+      {
+        "label": "Fecha",
+        "type": "month"
+      },
+      {
+        "label": "Duración",
+        "type": "select",
+        "options": ["1–2 días", "3–5 días", "6–8 días", "9+ días"]
+      },
+      {
+        "label": "Dificultad",
+        "type": "select",
+        "options": ["Baja", "Media", "Alta"]
+      },
+      {
+        "label": "Presupuesto (USD)",
+        "type": "number",
+        "placeholder": "Ej: 500",
+        "min": 100,
+        "step": 50
+      },
+      {
+        "label": "Eco & Responsible",
+        "type": "checkbox"
+      }
+    ],
+    "button": "Ver resultados"
+  },
+  "tours": {
+    "title": "Top Tours Oct–Feb",
+    "items": [
+        {
+            "id": "tayrona",
+            "name": "Tayrona Eco Trek",
+            "country": "Colombia",
+            "image": "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?w=900&q=80",
+            "alt": "Sendero selvático y costa rocosa del Parque Tayrona, Colombia",
+            "difficulty": "Media",
+            "risk": "Bajo",
+            "age": "12+",
+            "price": 180,
+            "rating": 4,
+            "reviews": 120,
+            "detailLink": "#detalle-tayrona"
+          },
+          {
+            "id": "chapada",
+            "name": "Chapada Diamantina",
+            "country": "Brasil",
+            "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900&q=80",
+            "alt": "Cascada y cañón en Chapada Diamantina, Brasil",
+            "difficulty": "Alta",
+            "risk": "Medio",
+            "age": "15+",
+            "price": 260,
+            "rating": 4,
+            "reviews": 98,
+            "detailLink": "#detalle-chapada"
+          },
+          {
+            "id": "monteverde",
+            "name": "Monteverde Cloud Walk",
+            "country": "Costa Rica",
+            "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900&q=80",
+            "alt": "Bosque nuboso con pasarela en Monteverde, Costa Rica",
+            "difficulty": "Baja",
+            "risk": "Bajo",
+            "age": "8+",
+            "price": 150,
+            "rating": 5,
+            "reviews": 210,
+            "detailLink": "#detalle-monteverde"
+          },
+          {
+            "id": "ausangate",
+            "name": "Ausangate Trek",
+            "country": "Perú",
+            "image": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900&q=80",
+            "alt": "Cordillera nevada y lagunas cerca del Ausangate, Perú",
+            "difficulty": "Alta",
+            "risk": "Alto",
+            "age": "18+",
+            "price": 340,
+            "rating": 4,
+            "reviews": 76,
+            "detailLink": "#detalle-ausangate"
+          },
+          {
+            "id": "torres",
+            "name": "Torres del Paine W Trek",
+            "country": "Chile",
+            "image": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900&q=80",
+            "alt": "Agujas graníticas y laguna turquesa en Torres del Paine, Chile",
+            "difficulty": "Alta",
+            "risk": "Medio",
+            "age": "16+",
+            "price": 420,
+            "rating": 5,
+            "reviews": 184,
+            "detailLink": "#detalle-torres"
+          },
+          {
+            "id": "iguazu",
+            "name": "Iguazú Selva Trail",
+            "country": "Argentina",
+            "image": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=900&q=80",
+            "alt": "Cataratas del Iguazú vistas desde pasarela, Argentina",
+            "difficulty": "Baja",
+            "risk": "Bajo",
+            "age": "8+",
+            "price": 190,
+            "rating": 5,
+            "reviews": 230,
+            "detailLink": "#detalle-iguazu"
+          }
+    ]
+  },
+  "comparison": {
+    "title": "Comparador de Tours",
+    "tours": [
+      { "name": "Tour A", "price": 180, "duration": "3 días", "difficulty": "Media", "risk": "Clima", "includes": "Guía, snacks", "excludes": "Vuelos", "eco": "Cert. local", "rating": "★★★★☆ (120)" },
+      { "name": "Tour B", "price": 260, "duration": "4 días", "difficulty": "Alta", "risk": "Rocas", "includes": "Guía, almuerzo", "excludes": "Vuelos", "eco": "Cert. regional", "rating": "★★★★☆ (98)" },
+      { "name": "Tour C", "price": 340, "duration": "6 días", "difficulty": "Alta", "risk": "Altitud", "includes": "Guía, campamento", "excludes": "Vuelos", "eco": "Compensación CO₂", "rating": "★★★★☆ (76)" }
+    ]
+  },
+  "media": {
+    "title": "Multimedia",
+    "items": [
+      {
+        "type": "video",
+        "src": "https://files.samplescdn.net/sample-video.mp4",
+        "poster": "https://images.unsplash.com/photo-1520975916090-3105956d4b38?w=800&q=80",
+        "caption": "Video: turismo responsable"
+      },
+      {
+        "type": "youtube",
+        "src": "https://www.youtube.com/embed/aqz-KE-bpKQ",
+        "caption": "Documental naturaleza (YouTube)"
+      },
+      {
+        "type": "map",
+        "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4027369.0696367226!2d-76.6!3d4.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5f9a5c1c9bdf03%3A0x2e3e6fa2b7aaf!2sParque%20Nacional%20Natural%20Tayrona!5e0!3m2!1ses!2sco!4v1718070000000",
+        "caption": "Mapa de ruta (Google Maps)",
+        "aria-label": "Mapa: Parque Nacional Natural Tayrona"
+      }
+    ]
+  },
+  "eco": {
+    "title": "Compromiso ecológico",
+    "items": [
+      "🌿 Grupos pequeños",
+      "🧭 Guías locales certificados",
+      "♻️ Huella compensada",
+      "📜 Normas del parque y \"Leave No Trace\""
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonios verificados",
+    "items": [
+      {
+        "text": "Experiencia increíble, muy respetuosos con la naturaleza.",
+        "author": "Ana G.",
+        "location": "Colombia"
+      },
+      {
+        "text": "Rutas hermosas y guías expertos.",
+        "author": "Mark T.",
+        "location": "USA"
+      }
+    ]
+  },
+  "blog": {
+    "title": "Blog",
+    "posts": [
+      {
+        "title": "Consejos para trekking responsable en Costa Rica",
+        "excerpt": "Planifica, hidrátate y respeta la fauna. Checklist básico para no dejar rastro.",
+        "link": "#"
+      },
+      {
+        "title": "Fotografía de fauna: ética y buenas prácticas",
+        "excerpt": "Cómo capturar grandes momentos sin intervenir el entorno natural.",
+        "link": "#"
+      },
+      {
+        "title": "Qué llevar para alta montaña en Perú",
+        "excerpt": "Equipo mínimo, aclimatación y seguridad para disfrutar el Ausangate Trek.",
+        "link": "#"
+      }
+    ]
+  },
+  "insurance": {
+    "title": "Seguros de viaje",
+    "description": "Viaja tranquilo con coberturas de salud, equipaje y cancelación.",
+    "features": [
+      "Asistencia médica internacional",
+      "Cobertura en deportes de aventura",
+      "Atención 24/7 en español"
+    ],
+    "button": "Cotizar seguro"
+  },
+  "contact": {
+    "title": "Contacto",
+    "form": {
+      "fields": [
+        { "label": "Nombre", "type": "text", "name": "nombre", "placeholder": "Tu nombre", "required": true },
+        { "label": "Email", "type": "email", "name": "email", "placeholder": "tu@email.com", "required": true },
+        { "label": "País", "type": "text", "name": "pais", "placeholder": "Ej: Colombia" },
+        { "label": "Mensaje", "type": "textarea", "name": "mensaje", "placeholder": "¿En qué te ayudamos?", "required": true, "rows": 5 }
+      ],
+      "button": "Enviar"
+    },
+    "info": {
+      "whatsapp": { "number": "573001112233", "display": "+57 300 111 2233" },
+      "email": "hola@ecoaventura.lat",
+      "schedule": "Lun–Sáb, 9:00–18:00 (GMT-5)",
+      "coverage": "Colombia, Brasil, Costa Rica, Argentina, Perú"
+    }
+  },
+  "footer": {
+    "copyright": "EcoAventura LATAM — Todos los derechos reservados.",
+    "links": [
+      { "text": "Términos", "href": "#" },
+      { "text": "Privacidad", "href": "#" },
+      { "text": "Volver arriba ↑", "href": "#inicio", "class": "to-top" }
+    ]
+  },
+  "team": {
+    "title": "Integrantes del Proyecto",
+    "subtitle": "Desarrollo de Página Web - Diseño de Páginas Web",
+    "members": [
+      {
+        "name": "Edwin Manuel Mendoza de la Hoz",
+        "id": "7502320023"
+      },
+      {
+        "name": "Emmanuel Gutierrez Garcia", 
+        "id": "7502320013"
+      },
+      {
+        "name": "Mario Felipe Goenaga Lozano",
+        "id": "7502320028"
+      },
+      {
+        "name": "Natalia Sofia Peña Romero",
+        "id": "7502320025"
+      }
+    ]
+  }
+}

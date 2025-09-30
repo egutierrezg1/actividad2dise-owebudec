@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Agencia EcoAventura LATAM: tours ecológicos por Latinoamérica. Reservas temporada alta Oct–Feb, grupos pequeños y operadores responsables."
+    />
+    <title>Agencia EcoAventura LATAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="content-loader.js"></script>
+  </head>
+  <body>
+    <!-- Header / Nav  Satisface: estructura, vínculos, texto, estilos -->
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="logo" href="#inicio" aria-label="Ir al inicio"
+          >Agencia <strong>EcoAventura</strong> LATAM</a
+        >
+        <nav
+          class="site-nav"
+          role="navigation"
+          aria-label="Navegación principal"
+        >
+          <button
+            id="menuToggle"
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="navList"
+          >
+            ☰
+          </button>
+          <ul id="navList">
+            <!-- Navegación cargada dinámicamente -->
+          </ul>
+        </nav>
+        <a
+          class="whatsapp"
+          href="https://wa.me/573001112233"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Escríbenos por WhatsApp"
+          >WhatsApp</a
+        >
+      </div>
+    </header>
+
+    <!-- Hero Satisface: h1/h2/p, botones <button>, estilos CSS -->
+    <main id="inicio"></main>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <h1 id="hero-title"><!-- Título cargado dinámicamente --></h1>
+        <p class="lead"><!-- Subtítulo cargado dinámicamente --></p>
+        <div class="cta-row"><!-- Botones cargados dinámicamente --></div>
+      </div>
+    </section>
+
+    <!-- Filtros (form básico con inputs y select) -->
+    <section class="filters container" aria-labelledby="filtros-title">
+      <form
+        class="filter-form"
+        onsubmit="return false"
+        aria-label="Filtros simulados de búsqueda"
+      >
+        <!-- Formulario cargado dinámicamente -->
+      </form>
+    </section>
+
+    <!-- Cards de Tours (imágenes, texto, enlaces, botones) -->
+    <section id="tours" class="container tours" aria-labelledby="tours-title">
+      <div class="section-head">
+        <h2 id="tours-title">Top Tours Oct–Feb</h2>
+        <div class="compare-chip" aria-live="polite">
+          Comparar (<span id="compareCount">0</span>)
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <!-- Tours cargados dinámicamente -->
+      </div>
+    </section>
+
+    <!-- Comparador (Tabla) Satisface: <table>, <tr>, <th>, <td>, estilos -->
+    <section class="container" aria-labelledby="comparador-title">
+      <h2 id="comparador-title">Comparador de Tours</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Atributo</th>
+              <th>Tour A</th>
+              <th>Tour B</th>
+              <th>Tour C</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Tabla cargada dinámicamente -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Multimedia: Video + Iframe (YouTube + Mapa) -->
+
+    <section class="container media" aria-labelledby="media-title">
+      <h2 id="media-title">Multimedia</h2>
+      <div class="media-grid">
+        <!-- Multimedia cargado dinámicamente -->
+      </div>
+    </section>
+
+    <!-- Compromiso ecológico + Testimonios + Blog Satisface: texto, listas, estilos -->
+    <section id="sobre" class="container eco" aria-labelledby="eco-title">
+      <h2 id="eco-title">Compromiso ecológico</h2>
+      <ul class="eco-list">
+        <!-- Lista cargada dinámicamente -->
+      </ul>
+    </section>
+
+    <section class="container testimonios" aria-labelledby="test-title">
+      <!-- Testimonios cargados dinámicamente -->
+    </section>
+
+    <section id="blog" class="container blog" aria-labelledby="blog-title">
+      <h2 id="blog-title">Blog</h2>
+      <div class="blog-grid">
+        <!-- Posts cargados dinámicamente -->
+      </div>
+    </section>
+
+    <!-- Seguros -->
+
+    <section id="seguros" class="container seguros" aria-labelledby="seg-title">
+      <!-- Contenido de seguros cargado dinámicamente -->
+    </section>
+
+    <!-- Contacto (form + vínculos) Satisface: <form> con validación nativa, enlaces -->
+        <section id="contacto" class="container contacto" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contacto</h2>
+      <div class="contact-grid">
+        <form class="contact-form" action="#" method="post" novalidate>
+          <!-- Formulario cargado dinámicamente -->
+        </form>
+
+        <aside class="contact-aside" aria-label="Información de contacto">
+          <!-- Información de contacto cargada dinámicamente -->
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sección de Integrantes -->
+  <section class="team-section" aria-labelledby="team-title">
+    <div class="container">
+      <!-- Integrantes cargados dinámicamente -->
+    </div>
+  </section>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <!-- Footer cargado dinámicamente -->
+    </div>
+  </footer>
+  </body>
+</html>
