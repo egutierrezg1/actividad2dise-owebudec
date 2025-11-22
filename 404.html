@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="EcoAventura LATAM - Ruta no encontrada" />
+    <title>EcoAventura LATAM | No encontrado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--gradient-hero), url('https://images.unsplash.com/photo-1521292270410-a8c6e0f1e04a?w=1400&q=80') center/cover no-repeat;
+      }
+      .nf-card{
+        background: rgba(255,255,255,0.9);
+        backdrop-filter: blur(10px);
+        border-radius: var(--radius-lg);
+        padding: 32px;
+        width: min(520px, 92vw);
+        box-shadow: var(--sombra-hover);
+        text-align: center;
+        border: 1px solid rgba(46,125,50,0.15);
+      }
+      .nf-code{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: var(--verde-claro);
+        color: var(--verde-oscuro);
+        font-weight: 800;
+        margin-bottom: 14px;
+      }
+      .nf-actions{
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 18px;
+      }
+      .nf-links{
+        margin-top: 12px;
+        color: var(--gris-2);
+        font-size: 0.95rem;
+      }
+      .nf-links a{ color: var(--verde-oscuro); font-weight: 700; text-decoration: none; }
+      .nf-links a:hover{ text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+    <main class="nf-card" aria-labelledby="nf-title">
+      <div class="nf-code">404 · Sendero no encontrado</div>
+      <h1 id="nf-title">Parece que tomamos un desvío</h1>
+      <p>La ruta que buscas no existe o se movió. Regresemos al campamento base para seguir planificando la aventura.</p>
+      <div class="nf-actions">
+        <a class="btn btn-primary" href="index.html">Volver al inicio</a>
+        <a class="btn btn-outline" href="index.html#contacto">Hablar con un asesor</a>
+      </div>
+      <p class="nf-links">
+        ¿Necesitas ayuda? Escríbenos a <a href="mailto:hola@ecoaventura.lat">hola@ecoaventura.lat</a> o revisa los <a href="index.html#tours">tours activos</a>.
+      </p>
+    </main>
+  </body>
+</html>

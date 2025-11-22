@@ -1,0 +1,46 @@
+Agencia EcoAventura LATAM - Guía rápida
+
+Tecnología
+- HTML5, CSS3 y JavaScript vanilla.
+- Carga dinámica de contenido desde data.json vía fetch.
+- Sin frameworks; tipografía Manrope desde Google Fonts.
+- Diseño responsivo (media queries en CSS).
+
+Estructura y qué hace cada parte
+- Header: barra fija con logo, navegación y botón de WhatsApp.
+- Hero: título, subtítulo, métricas rápidas y checklist lateral; dos CTAs (buscar tours, cotizar).
+- Logro destacado: “Logro 2025: Sello Eco LATAM” con descripción, barra de progreso y cifra de impacto.
+- Filtros: formulario simulado (destino, fecha, duración, dificultad, presupuesto, eco) que filtra las tarjetas de tours en cliente.
+- Cards de tours: grid con imagen, tags, resumen, incluye/no incluye parcial, precio, rating; botones Ver paquete (abre modal), Comparar (contador), Reservar (precarga mensaje en contacto).
+- Tour del día: ventana flotante con el paquete destacado; botón Ver paquete abre modal; colapsable.
+- Comparador: tabla con atributos clave de tres tours.
+- Multimedia: video local, embed de YouTube y mapa de Google; tarjetas con hover.
+- Compromiso ecológico: lista de prácticas eco.
+- Testimonios: citas verificadas.
+- Blog: posts con “Leer más” que abre modal con contenido ampliado y CTA para cotizar.
+- Seguros: bloque centrado con beneficios y CTA.
+- Contacto: formulario (envío simulado con mensaje de éxito), datos de WhatsApp/email/horario/cobertura.
+- Integrantes: tarjetas con nombre e ID.
+- Footer: links legales y volver arriba.
+- 404.html: página de “sendero no encontrado” con botones a inicio y contacto.
+
+Lore de la página
+EcoAventura LATAM es un operador regional que nació de exguías de parques nacionales que decidieron certificar rutas con impacto mínimo. Su sello Eco LATAM 2025 reconoce cero incidentes, guías locales certificados y compensación de CO2 en cada salida. Trabajan con grupos pequeños, permisos oficiales y priorizan contratar proveedores de la comunidad.
+
+Preguntas frecuentes (y respuestas)
+1) ¿Con qué tecnologías está hecha la página? HTML, CSS y JavaScript vanilla; datos en JSON cargados con fetch.
+2) ¿El formulario envía datos reales? No, el envío es simulado; muestra un mensaje de éxito. Se puede conectar a un backend o servicio de formularios.
+3) ¿Cómo se filtran los tours? En cliente: el formulario actualiza la lista filtrando por destino, dificultad, duración y presupuesto.
+4) ¿Para qué sirve “Comparar”? Suma tours (hasta 3) al contador y resalta el botón; la tabla comparadora es estática pero se puede extender.
+5) ¿Qué información muestra “Ver paquete”? Abre un modal con resumen, precio, incluye/no incluye, clima, temporada, grupo y acceso directo a WhatsApp/contacto.
+6) ¿Cómo se elige el “Tour del día”? Se define en data.json (tourOfDay.id). Se muestra en la ventana flotante y abre el modal.
+7) ¿Qué hace “Hablar ahora” en el modal? Cierra el modal y hace scroll a la sección de contacto.
+8) ¿Por qué “Cotizar este destino” en el blog cierra el modal? Para llevar al usuario al formulario de contacto y que escriba sobre ese tema.
+9) ¿Qué pasa si abro un enlace roto? Se muestra 404.html con opciones para volver al inicio o contactar.
+10) ¿Qué métricas se muestran en el hero? Satisfacción, tamaño de grupos y CO2 compensado (definidas en data.json).
+11) ¿El comparador toma los tours filtrados? No, la tabla es de tres tours de ejemplo definidos en data.json.
+12) ¿Cómo se actualiza el año del footer? Con JS que inserta el año actual en #year.
+13) ¿La navegación móvil se cierra sola al cambiar a desktop? El menú usa un toggle; al crecer de viewport puede requerir reiniciar display si quedó oculto.
+14) ¿Cómo se controla el progreso del logro? Porcentaje en data.json (achievement.progress y progressValue).
+15) ¿Se puede usar offline? No plenamente: fetch del JSON requiere servir la página (no file://). Usar un servidor estático simple.
+16) ¿Se puede ampliar la accesibilidad? Sí: añadir aria-live al mensaje de envío, aria-valuenow/min/max a la barra de logro y reset del menú según media query.

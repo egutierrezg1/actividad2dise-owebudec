@@ -5,37 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Agencia EcoAventura LATAM: tours ecológicos por Latinoamérica. Reservas temporada alta Oct–Feb, grupos pequeños y operadores responsables."
+      content="Agencia EcoAventura LATAM: tours ecologicos por Latinoamerica. Reservas temporada alta Oct-Feb, grupos pequenos y operadores responsables."
     />
     <title>Agencia EcoAventura LATAM</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <script src="content-loader.js"></script>
   </head>
   <body>
-    <!-- Header / Nav  Satisface: estructura, vínculos, texto, estilos -->
     <header class="site-header" role="banner">
       <div class="container header-inner">
-        <a class="logo" href="#inicio" aria-label="Ir al inicio"
-          >Agencia <strong>EcoAventura</strong> LATAM</a
-        >
+        <a class="logo" href="#inicio" aria-label="Ir al inicio">
+          <img
+            class="logo-mark"
+            src="logo.png"
+            alt="Logo EcoAventura LATAM"
+            loading="lazy"
+          />
+          Agencia <strong>EcoAventura</strong> LATAM
+        </a>
         <nav
           class="site-nav"
           role="navigation"
-          aria-label="Navegación principal"
+          aria-label="Navegacion principal"
         >
           <button
             id="menuToggle"
             class="menu-toggle"
             aria-expanded="false"
             aria-controls="navList"
+            type="button"
           >
             ☰
           </button>
           <ul id="navList">
-            <!-- Navegación cargada dinámicamente -->
+            <!-- Navegacion cargada dinamicamente -->
           </ul>
         </nav>
         <a
@@ -43,128 +51,205 @@
           href="https://wa.me/573001112233"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Escríbenos por WhatsApp"
+          aria-label="Escribenos por WhatsApp"
           >WhatsApp</a
         >
       </div>
     </header>
 
-    <!-- Hero Satisface: h1/h2/p, botones <button>, estilos CSS -->
-    <main id="inicio"></main>
-
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero-inner">
-        <h1 id="hero-title"><!-- Título cargado dinámicamente --></h1>
-        <p class="lead"><!-- Subtítulo cargado dinámicamente --></p>
-        <div class="cta-row"><!-- Botones cargados dinámicamente --></div>
-      </div>
-    </section>
-
-    <!-- Filtros (form básico con inputs y select) -->
-    <section class="filters container" aria-labelledby="filtros-title">
-      <form
-        class="filter-form"
-        onsubmit="return false"
-        aria-label="Filtros simulados de búsqueda"
-      >
-        <!-- Formulario cargado dinámicamente -->
-      </form>
-    </section>
-
-    <!-- Cards de Tours (imágenes, texto, enlaces, botones) -->
-    <section id="tours" class="container tours" aria-labelledby="tours-title">
-      <div class="section-head">
-        <h2 id="tours-title">Top Tours Oct–Feb</h2>
-        <div class="compare-chip" aria-live="polite">
-          Comparar (<span id="compareCount">0</span>)
+    <main id="inicio">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow" id="hero-eyebrow"></p>
+            <h1 id="hero-title"></h1>
+            <p class="lead"></p>
+            <div class="hero-metrics" id="hero-metrics"></div>
+            <div class="cta-row"></div>
+          </div>
+          <div class="hero-side" id="hero-side"></div>
         </div>
-      </div>
+      </section>
 
-      <div class="card-grid">
-        <!-- Tours cargados dinámicamente -->
-      </div>
-    </section>
+      <section
+        id="logro"
+        class="container achievement"
+        aria-labelledby="achievement-title"
+      >
+        <div class="achievement-card">
+          <div class="badge soft">Logro</div>
+          <div class="achievement-body">
+            <h2 id="achievement-title"></h2>
+            <p id="achievement-description"></p>
+            <div class="achievement-metric">
+              <div class="metric-label" id="achievement-progress-label"></div>
+              <div class="progress-bar" aria-hidden="true">
+                <span id="achievement-progress"></span>
+              </div>
+              <div class="metric-value" id="achievement-progress-value"></div>
+            </div>
+          </div>
+          <div class="achievement-highlight" id="achievement-highlight"></div>
+        </div>
+      </section>
 
-    <!-- Comparador (Tabla) Satisface: <table>, <tr>, <th>, <td>, estilos -->
-    <section class="container" aria-labelledby="comparador-title">
-      <h2 id="comparador-title">Comparador de Tours</h2>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Atributo</th>
-              <th>Tour A</th>
-              <th>Tour B</th>
-              <th>Tour C</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Tabla cargada dinámicamente -->
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- Multimedia: Video + Iframe (YouTube + Mapa) -->
-
-    <section class="container media" aria-labelledby="media-title">
-      <h2 id="media-title">Multimedia</h2>
-      <div class="media-grid">
-        <!-- Multimedia cargado dinámicamente -->
-      </div>
-    </section>
-
-    <!-- Compromiso ecológico + Testimonios + Blog Satisface: texto, listas, estilos -->
-    <section id="sobre" class="container eco" aria-labelledby="eco-title">
-      <h2 id="eco-title">Compromiso ecológico</h2>
-      <ul class="eco-list">
-        <!-- Lista cargada dinámicamente -->
-      </ul>
-    </section>
-
-    <section class="container testimonios" aria-labelledby="test-title">
-      <!-- Testimonios cargados dinámicamente -->
-    </section>
-
-    <section id="blog" class="container blog" aria-labelledby="blog-title">
-      <h2 id="blog-title">Blog</h2>
-      <div class="blog-grid">
-        <!-- Posts cargados dinámicamente -->
-      </div>
-    </section>
-
-    <!-- Seguros -->
-
-    <section id="seguros" class="container seguros" aria-labelledby="seg-title">
-      <!-- Contenido de seguros cargado dinámicamente -->
-    </section>
-
-    <!-- Contacto (form + vínculos) Satisface: <form> con validación nativa, enlaces -->
-        <section id="contacto" class="container contacto" aria-labelledby="contact-title">
-      <h2 id="contact-title">Contacto</h2>
-      <div class="contact-grid">
-        <form class="contact-form" action="#" method="post" novalidate>
-          <!-- Formulario cargado dinámicamente -->
+      <section class="filters container" aria-labelledby="filtros-title">
+        <form
+          class="filter-form"
+          onsubmit="return false"
+          aria-label="Filtros simulados de busqueda"
+        >
+          <!-- Formulario cargado dinamicamente -->
         </form>
+      </section>
 
-        <aside class="contact-aside" aria-label="Información de contacto">
-          <!-- Información de contacto cargada dinámicamente -->
-        </aside>
+      <section id="tours" class="container tours" aria-labelledby="tours-title">
+        <div class="section-head">
+          <h2 id="tours-title">Top Tours Oct-Feb</h2>
+          <div class="section-actions">
+            <div class="compare-chip" aria-live="polite">
+              Comparar (<span id="compareCount">0</span>)
+            </div>
+            <a class="text-link to-top" href="#inicio">Volver arriba</a>
+          </div>
+        </div>
+
+        <div class="card-grid">
+          <!-- Tours cargados dinamicamente -->
+        </div>
+      </section>
+
+      <section class="container" aria-labelledby="comparador-title">
+        <h2 id="comparador-title">Comparador de Tours</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Atributo</th>
+                <th>Tour A</th>
+                <th>Tour B</th>
+                <th>Tour C</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Tabla cargada dinamicamente -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="container media" aria-labelledby="media-title">
+        <h2 id="media-title">Multimedia</h2>
+        <div class="media-grid">
+          <!-- Multimedia cargado dinamicamente -->
+        </div>
+      </section>
+
+      <section id="sobre" class="container eco" aria-labelledby="eco-title">
+        <h2 id="eco-title">Compromiso ecologico</h2>
+        <ul class="eco-list">
+          <!-- Lista cargada dinamicamente -->
+        </ul>
+      </section>
+
+      <section class="container testimonios" aria-labelledby="test-title">
+        <!-- Testimonios cargados dinamicamente -->
+      </section>
+
+      <section id="blog" class="container blog" aria-labelledby="blog-title">
+        <h2 id="blog-title">Blog</h2>
+        <div class="blog-grid">
+          <!-- Posts cargados dinamicamente -->
+        </div>
+      </section>
+
+      <section
+        id="seguros"
+        class="container seguros"
+        aria-labelledby="seg-title"
+      >
+        <!-- Contenido de seguros cargado dinamicamente -->
+      </section>
+
+      <section
+        id="contacto"
+        class="container contacto"
+        aria-labelledby="contact-title"
+      >
+        <h2 id="contact-title">Contacto</h2>
+        <div class="contact-grid">
+          <form class="contact-form" action="#" method="post" novalidate>
+            <!-- Formulario cargado dinamicamente -->
+          </form>
+
+          <aside class="contact-aside" aria-label="Informacion de contacto">
+            <!-- Informacion de contacto cargada dinamicamente -->
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <section class="team-section" aria-labelledby="team-title">
+      <div class="container">
+        <!-- Integrantes cargados dinamicamente -->
       </div>
     </section>
-  </main>
 
-  <!-- Sección de Integrantes -->
-  <section class="team-section" aria-labelledby="team-title">
-    <div class="container">
-      <!-- Integrantes cargados dinámicamente -->
-    </div>
-  </section>
+    <aside
+      id="tourDayWindow"
+      class="tour-day-window"
+      aria-label="Tour del dia"
+      aria-live="polite"
+    >
+      <!-- Cargado dinamicamente -->
+    </aside>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-inner">
-      <!-- Footer cargado dinámicamente -->
+    <div
+      id="tourDetailModal"
+      class="tour-modal hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="tourModalTitle"
+    >
+      <div class="modal-backdrop"></div>
+      <div class="modal-card">
+        <button
+          class="modal-close"
+          type="button"
+          aria-label="Cerrar ventana de tour"
+        >
+          &times;
+        </button>
+        <div class="modal-body"></div>
+      </div>
     </div>
-  </footer>
+
+    <div
+      id="blogModal"
+      class="blog-modal hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="blogModalTitle"
+    >
+      <div class="modal-backdrop"></div>
+      <div class="blog-modal-card">
+        <button
+          class="modal-close"
+          type="button"
+          aria-label="Cerrar nota"
+        >
+          &times;
+        </button>
+        <div class="blog-modal-body"></div>
+      </div>
+    </div>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <!-- Footer cargado dinamicamente -->
+      </div>
+    </footer>
+
+    <script src="content-loader.js" defer></script>
   </body>
 </html>
